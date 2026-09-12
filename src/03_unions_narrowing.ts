@@ -2,7 +2,7 @@ export function formatearIdentificador(id: string | number): string {
   if(typeof id === "string"){
     return `ID-ALFANUMERICO-${id.toUpperCase()}`;
   } else if(typeof id === "number") {
-    return `ID-NUMERICO-${id.toFixed(0).padStart(6, "0")}`;
+    return `ID-NUMERICO-#${id.toFixed(0).padStart(6, '0')}`;
   }
 }
 
