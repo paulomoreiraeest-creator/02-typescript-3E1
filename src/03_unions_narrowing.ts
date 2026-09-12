@@ -1,7 +1,7 @@
 export function formatearIdentificador(id: string | number): string {
   if(typeof id === "string"){
     return `ID-ALFANUMERICO-${id.toUpperCase()}`;
-  } else if(typeof id === "number") {
+  } else{
     return `ID-NUMERICO-#${id.toFixed(0).padStart(6, '0')}`;
   }
 }
@@ -23,7 +23,6 @@ export interface EstadoError {
   mensaje: string;
 }
 
-// Unión discriminada:
 export type EstadoPantalla<T> =
   | EstadoCargando
   | EstadoExito<T>
