@@ -1,5 +1,4 @@
 export function formatearIdentificador(id: string | number): string {
-  // 👇 TODO: Escribe tu lógica con if (typeof id === "string") y reemplaza el return "":
   if(typeof id === "string"){
     return `ID-ALFANUMERICO-${id.toUpperCase()}`;
   } else if(typeof id === "number") {
